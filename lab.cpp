@@ -1,16 +1,14 @@
 #include <bits/stdc++.h>
-#include "CopyBucketNotLeaf.h"
+#include "ExtendibleHashing2.h"
 
 using namespace std;
 int main()
 {
     try
     {
-        BucketNotLeaf<string> leaf;
-        //leaf.add_element("Alexander", 1);
-        //leaf.add_element("Bob", 2);
-        leaf.read_from_file("test2.dat", 0);
-        leaf.show();
+        ExtendibleHashing<int, 3> eh("test");
+        eh.insert(1, 1);
+        eh.insert(2, 2);
     }
     catch (const std::exception &e)
     {
